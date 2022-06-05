@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascrip 1</title>
+</head>
+
+<body>
+
+    <p style="color:red">
+        click để thực hiện phép tính
+    </p>
+
+    <h1 onclick="a()">
+        Chuyển đổi nhiệt độ
+    </h1>
+    <script>
+        function a() {
+            let c = prompt("nhập °C muốn chuyển đổi");
+            console.log("sau chuyển đổi : ");
+            console.log("°F = " + C2F(c));
+
+            function C2F(c) {
+                return c * 1.8 + 32;
+            }
+        }
+    </script>
+
+    <!--  -->
+
+    <h1 onclick="b()">
+        Chuyển đổi tiền tệ
+    </h1>
+    <script>
+        function b() {
+            let n = prompt("nhập số tiền muốn chuyển đổi");
+            console.log("sau chuyển đổi : ");
+            console.log("VND = " + USD2VND(n));
+
+            function USD2VND(n) {
+                return n * 23.500;
+            }
+        }
+    </script>
+
+    <!--  -->
+
+    <h1 onclick="c()">
+        Tính diện tích hình chữ nhật
+    </h1>
+    <script>
+        function c() {
+            let a = prompt("độ dài cạnh a của hình chữ nhật");
+            let b = prompt("độ dài cạnh b của hình chữ nhật");
+            console.log("diện tích hình chữ nhật : ");
+            console.log(findArea(a, b));
+
+            function findArea(a, b) {
+                return a * b;
+            }
+        }
+    </script>
+
+    <!--  -->
+    <!--  -->
+
+    <h1 onclick="d()">
+        Tính lãi suất kép ngân hàng (kỳ quan thứ 8)
+    </h1>
+    <script>
+        function d() {
+
+
+            let P = parseInt(prompt("số tiền gốc ban đầu "));
+            let r = parseInt(prompt("lãi suất hàng năm "));
+            let t = parseInt(prompt("số năm gửi ngân hàng "));
+            console.log("Lãi : ");
+            console.log(compoundInterest(P, r, t));
+
+            function compoundInterest(P, r, t) {
+                let input = parseInt(prompt(" chọn hình thức ghép lãi : \n 1 .gửi theo tháng \n 2 . gửi theo quý (3 tháng) \n 3 . gửi theo năm "));
+                switch (input) {
+                    case 1:
+                        {
+                            n = 12;
+                            return P * (1 + r / n) ** (n * t)
+                            break;
+                        }
+                    case 2:
+                        {
+                            n = 4;
+                            return P * (1 + r / n) ** (n * t)
+                            break;
+                        }
+                    case 3:
+                        {
+                            n = 1;
+                            return P * (1 + r / n) ** (n * t)
+                            break;
+                        }
+                    default:
+                        {
+                            console.warn("hình thức ghép lãi k hợp lệ");
+                            break;
+                        }
+                }
+            }
+        }
+    </script>
+
+    <!--  -->
+    <!--  -->
+
+    <h1 onclick="e()">
+        Tính diện tích hình tam giác
+    </h1>
+    <script>
+        function e() {
+            let a = prompt("độ dài cạnh a của hình tam giác");
+            let b = prompt("độ dài cạnh b của hình tam giác");
+            let c = prompt("độ dài cạnh c của hình tam giác");
+            console.log("diện tích hình tam giác : ");
+            console.log(findArea(a, b, c));
+
+            function findArea(a, b, c) {
+                let P = 1 / 2 * (a + b + c);
+                return Math.sqrt(P * (P - a) * (P - b) * (P - c));
+            }
+        }
+    </script>
+
+    <!--  -->
+
+
+</body>
+
+</html>

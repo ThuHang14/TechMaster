@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="p.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        /* text-align: center; */
+    }
+    
+    *:focus {
+        outline: none;
+    }
+    
+    body {
+        font-size: 16px;
+        color: rgb(61, 64, 66);
+    }
+    
+    .container,
+    table {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+    
+    tr,
+    td,
+    th {
+        border: none;
+    }
+    
+    th {
+        background-color: rgba(63, 65, 64, 0.445);
+    }
+    
+    td {
+        background-color: rgba(73, 73, 73, 0.11);
+    }
+    
+    th,
+    td {
+        padding: 10px;
+    }
+    
+    .btn-add,
+    .btn-add2 {
+        margin: 13px 50px;
+        padding: 7px;
+        border: none;
+        color: cadetblue;
+    }
+    
+    input,
+    select {
+        border: none;
+        margin: 0;
+        background-color: rgba(73, 73, 73, 0);
+        min-width: 50px;
+    }
+    
+    .btn {
+        text-align: end;
+    }
+    
+    .hidden {
+        display: none;
+    }
+    
+    .o,
+    .o2 {
+        width: 10px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="btn">
+            <button class="btn-add">Add person</button>
+            <button class="btn-add2 hidden">Add</button>
+        </div>
+        <table>
+
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Fullname</th>
+                    <th>Address City</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!--  -->
+                <tr class="person-template hidden tr-hidden">
+                    <td><input type="text" value="" class="o2" placeholder="  id"></td>
+                    <td><input type="text" value="" class="fullname2" placeholder="Full Name"></td>
+                    <td> <input type="text" value="" class="City" placeholder="Address City"></td>
+
+                    <td><input type="text" value="" class="email2" placeholder="Email"></td>
+                    <td><input type="text" value="" class="phone2" placeholder="Phone"> </td>
+                </tr>
+                <!--  -->
+                <template class="template">
+                <tr class="person-template">
+                    <td class="o"></td>
+                    <td class="fullname"></td>
+                    <td class="gender"></td>
+                   
+                    <td class="email"></td>
+                    <td class="phone"></td>
+                    <button class="btn-delete">gg</button>
+                </tr>
+            </template>
+                <!--  -->
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
