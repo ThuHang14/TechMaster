@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="mt-5">
+        <p>Name: <span th:text="${name}"> name</span></p>
+        <p>Photo: <a th:href="|/photos/${photo}|" th:text="${photo}"> a file </a> successfully uploaded</p>
+        <div>
+        </div>
+</body>
+</html>
