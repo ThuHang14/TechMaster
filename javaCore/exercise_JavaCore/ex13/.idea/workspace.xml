@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="72b2fcf5-a468-48c0-9635-e9430e734563" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex9/out/production/ex9/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ex9/out/production/ex9/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex9/out/production/ex9/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ex9/out/production/ex9/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex9/out/production/ex9/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ex9/out/production/ex9/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex9/out/production/ex9/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ex9/out/production/ex9/Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex9/out/production/ex9/Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ex9/out/production/ex9/Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex9/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex9/src/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex9/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex9/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex9/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex9/src/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ex9/src/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ex9/src/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exerciseJavaCore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../exerciseJavaCore.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="23v4Wipko3UZ5j22lNWTSZwX6oe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="72b2fcf5-a468-48c0-9635-e9430e734563" name="Changes" comment="" />
+      <created>1642601260977</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642601260977</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

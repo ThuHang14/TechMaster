@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9d8c64f8-caf2-426e-a5bc-305f3ee3a91d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../ex9/out/production/ex9/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ex9/out/production/ex9/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ex9/out/production/ex9/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ex9/out/production/ex9/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ex9/out/production/ex9/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ex9/out/production/ex9/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ex9/out/production/ex9/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ex9/out/production/ex9/Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ex9/out/production/ex9/Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ex9/out/production/ex9/Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ex9/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ex9/src/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ex9/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ex9/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ex9/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ex9/src/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ex9/src/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ex9/src/Service.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="23grRWCpJMnTbK7wYOD0jYnEkoJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9d8c64f8-caf2-426e-a5bc-305f3ee3a91d" name="Changes" comment="" />
+      <created>1642166563073</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642166563073</updated>
+      <workItem from="1642166564286" duration="3000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
