@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="h1.css" />
+    <title>Câu hỏi phỏng vấn Java p1</title>
+  </head>
+  <body>
+    <!--  -->
+    <div>
+      <ul style="line-height: 30px; background: darkgray; width: 160px">
+        <li>
+          <a href="h1_1.html" style="text-decoration: none; color: black">
+            Câu hỏi 1 &rarr; 5
+          </a>
+        </li>
+        <li>
+          <a href="h1_2.html" style="text-decoration: none; color: black">
+            Câu hỏi 6 &rarr; 10
+          </a>
+        </li>
+        <li>
+          <a href="h1_3.html" style="text-decoration: none; color: black">
+            Câu hỏi 11 &rarr; 17
+          </a>
+        </li>
+      </ul>
+
+      <hr />
+    </div>
+    <!--  -->
+    <div style="margin: 0 15%">
+      <div style="width: 1000px">
+        <h1 style="font-size: 60px">17 Câu hỏi phỏng vấn Java (Phần 1)</h1>
+        <h3>1. Tính đa hình là gì?</h3>
+        Tính đa hình được mô tả ngắn gọn là "One interface, many
+        implementations". Nó là một đặc điểm của việc có thể gán một ý nghĩa
+        hoặc cách sử dụng khác cho một thứ gì đó trong các ngữ cảnh khác nhau,
+        cụ thể là cho phép một thực thể chẳng hạn như một biến, một hàm hoặc một
+        đối tượng có nhiều hơn một dạng. Có hai loại đa hình:
+        <ul>
+          <li>
+            Đa hình lúc compile time: thể hiện qua method overloadding (nạp
+            chồng phương thức)
+          </li>
+          <li>Đa hình lúc runtime: thể hiện qua kế thừa và interface</li>
+        </ul>
+
+        <br />
+        <h3>2. Runtime polymorphism là gì?</h3>
+        Runtime polymorphism hay còn được gọi là dynamic method dispatch.<br />
+        <ins>Ví dụ :</ins>
+        của đa hình lúc runtime là method overriding (Ghi đè phương thức). Khi
+        class cha tham chiếu đến object của class con, method sẽ được xác định
+        tại runtime. Nghĩa là nếu chúng ta gọi đến method có sẵn ở class cha và
+        được class con định nghĩa lại thì trình biên dịch sẽ gọi method của
+        class con.
+        <br />
+        Hãy xem ví dụ dưới đây:
+        <br />
+        <p><img src="../../jpg/hw1_1.jpg" alt="code demo" /></p>
+        <br />
+        Kết quả hiển thị :
+        <br />
+        <p><img src="../../jpg/hw1_1.jpg" alt="code hiển thị" /></p>
+        <br />
+        <h3>3. Tính trừu tượng trong Java là gì?</h3>
+        Tính trừu tượng đề cập đến việc xử lý các ý tưởng hơn là sự kiện. Về cơ
+        bản, nó giải quyết việc ẩn các chi tiết và hiển thị những thứ cần thiết
+        cho người dùng. Vì vậy, bạn có thể nó rằng tính từu tượng trong Java là
+        quá trình ẩn các chi tiết triển khai khỏi người dùng và chỉ lộ chi tiết
+        chức năng cho họ. Có thể đạt được tính trừu tượng theo hai cách:
+        <ul>
+          <li>Sử dụng lớp abstract</li>
+          <li>Sử dụng interface</li>
+        </ul>
+
+        <h3>4. Sự khác biệt giữa class abstract và interface</h3>
+        <br />
+        <p><img src="../../jpg/hw1_2.jpg" alt="table" /></p>
+        <br />
+        <h3>5. Tính kế thừa trong Java là gì?</h3>
+        Kế thừa trong Java là khái niệm trong đó các thuộc tính, phương thức của
+        một lớp có thể được kế thừa bởi một lớp khác. Nó giúp sử dụng lại mã và
+        thiết lập mối quan hệ giữa các lớp khác nhau. Sự kế thừa được ttheer
+        hiện giữa hai loại lớp:
+        <ul>
+          <li>Super class (Base class - lớp cha)</li>
+          <li>Subclass (Derived class - lớp con)</li>
+        </ul>
+        Một lớp kế thừa các thuộc tính, phương thức được gọi là subclass, lớp có
+        các thuộc tính, phương thức được kế thừa được gọi là super class.
+        <!--  -->
+      </div>
+    </div>
+    <hr />
+    <div>
+      <h3>Bình Luận</h3>
+      <input type="text" />
+      <button>Gửi</button>
+    </div>
+  </body>
+</html>

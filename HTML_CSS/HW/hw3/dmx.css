@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+img{
+    max-width: 100%;
+}
+.flex{
+
+    display: flex;
+
+}
+.width{
+    width: 1300px;
+}
+.mf{
+    margin-left: auto;
+    margin-right: auto;
+}
+.list{
+    padding: 5px;
+    background: rgb(20, 58, 59);
+    border: none;
+    color:aliceblue;
+}
+.mf1{
+    margin-left: auto;
+    margin-right: auto;
+        padding: 20px;
+
+}
+.imgw{
+    padding: 0 24px;
+}
+.link{
+    text-decoration: none;
+}
+.ex{
+        font-size: 11px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Câu hỏi phỏng vấn Java p3</title>
+  </head>
+  <body>
+    <!--  -->
+    <div>
+      <ul style="line-height: 30px; background: darkgray; width: 160px">
+        <li>
+          <a href="h1_1.html" style="text-decoration: none; color: black">
+            Câu hỏi 1 &rarr; 5
+          </a>
+        </li>
+        <li>
+          <a href="h1_2.html" style="text-decoration: none; color: black">
+            Câu hỏi 6 &rarr; 10
+          </a>
+        </li>
+        <li>
+          <a href="h1_3.html" style="text-decoration: none; color: black">
+            Câu hỏi 11 &rarr; 17
+          </a>
+        </li>
+      </ul>
+
+      <hr />
+    </div>
+    <!--  -->
+    <div style="margin: 0 15%">
+      <div style="width: 1000px">
+        <h1 style="font-size: 60px">17 Câu hỏi phỏng vấn Java (Phần 3)</h1>
+        <h3>11. Association là gì?</h3>
+        Association là một mối qua hệ mà tất cả các đối tượng có vòng đời riêng
+        của chúng và không có chủ sở hữu. <br />
+        <ins>Ví dụ :</ins> như quan hệ giữa giảng viên và học viên: Một học viên
+        thì sẽ được nhiều giảng viên dạy và một giảng viên thì sẽ dạy nhiều học
+        viên nhưng không có quyền sở hữu giữa các đối tượng và cả hai đều có
+        vòng đời riêng.
+        <h3>12. Aggregation là gì?</h3>
+
+        Aggregation cũng giống như association, nhưng khác là aggregation có mối
+        quan hệ sở hữu. <br />
+        <ins>Ví dụ :</ins> như quan hệ giữa Khoa và giảng viên, một giảng viên
+        chỉ thuộc về một khoa, nhưng nếu loại bỏ giảng viên ra khỏi kha thì khoa
+        đó vẫn tồn tại.
+        <h3>13. Composition là gì?</h3>
+
+        Composition là một dạng đặc biệt của aggregation. Đối tượng con không có
+        vòng đời và nếu đối tượng cha loại bỏ tất cả đối tượng con thì đối tượng
+        cha cũng sẽ bị loại bỏ. <br />
+        <ins>Ví dụ :</ins> như trong một ngôi nhà có nhiều căn phòng, nếu chúng
+        ra dỡ bỏ tất cả các căn phòng đó thì ngôi nhà cũng bị dỡ bỏ
+
+        <h3>14. Dependency là gì?</h3>
+        Dependency là mối quan khi một đối tượng A phụ thuộc vào đối tượng B.
+        Những thay đổi ở đối tượng B có thể ảnh hưởng đến đối tượng A.<br />
+        <ins>Ví dụ :</ins> như ta có đối tượng khách hàng và đơn hàng. Khi thay
+        đổi thông tin khách hàng ví dụ như kiểu dữ liệu của id khách hàng thì
+        tại đơn hàng thông tin id của khách hàng cũng phải thay đổi theo
+
+        <h3>15. Interface Marker trong Java?</h3>
+        Marker Interface là một interface không có bất kỳ phương thức và thuộc
+        tích nào bên trong nó. Nó cung cấp thông tin run-time type về object, vì
+        vậy compiler và JVM có thêm thông tin về đối tượng thể thực hiện một số
+        hoạt động hữu ích. Một số Marker Interface trong Java: Serializable,
+        Cloneable,... Một marker interface còn được gọi là một tagging
+        interface. <br />
+        <ins>Ví dụ :</ins>
+        <br />
+        <img src="../../jpg/hw1_4.jpg" alt="Ví dụ " />
+        <br />
+        <h3>16.Constructor overloading trong Java</h3>
+        Trong Java, constructor overloading là một kỹ thuật thêm bất kỳ số lượng
+        constructor nào vào một lớp, mỗi constructor sẽ có danh sách tham số
+        khác nhau. Trình biên dịch sẽ sử dụng số lượng tham số và kiểu của chúng
+        trong một danh sách để phân biệt các constructor được nạp chồng
+        <br />
+        <img
+          src="../../jpg/hw1_5.jpg"
+          alt="Constructor overloading trong Java"
+        />
+        <br />
+        <h3>17. Tính đóng gói trong Java là gì?</h3>
+        Đóng gói là một cơ chế mà bạn liên kết dữ liệu (biến) và mã (phương
+        thức) với nhau như một đơn vị duy nhất. Ở đây, dữ liệu được ẩn khỏi thế
+        giới bên ngoài và chỉ có thể được truy cập thông qua các phương thức lớp
+        hiện tại. Điều này giúp bảo vệ dữ liệu khỏi bất kỳ sửa đổi không cần
+        thiết nào. Có thể đạt được tính đóng gói trong Java bằng cách:
+        <ul>
+          <li>Khai báo các biến của class là <mark>private</mark></li>
+          <li>
+            Cung cấp các phương thức <mark>getter</mark> và
+            <mark>setter</mark> để đọc và ghi giá trị của các biến.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--  -->
+    <div>
+      <hr />
+      <h3>Bình Luận</h3>
+      <input type="text" />
+      <button>Gửi</button>
+    </div>
+  </body>
+</html>

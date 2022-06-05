@@ -1,0 +1,33 @@
+body {
+  background: url(../../../jpg/h2_10.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.width {
+  width: 530px;
+}
+.body2 {
+  color: #fff;
+  background: rgba(187, 128, 80, 0.473);
+  padding: 135px 32px;
+  border: groove;
+  margin: 50px;
+}
+.footen {
+  text-align: center;
+  line-height: 33px;
+  letter-spacing: 20px;
+  border: none;
+}
+.footen button {
+  text-decoration: none;
+  font-size: 25px;
+}
+.shadow {
+  text-shadow: 5px 5px rgba(187, 119, 56, 0.747);
+  text-transform: capitalize;
+}
+button:hover {
+  color: rgb(255, 72, 0);
+}

@@ -1,0 +1,53 @@
+body {
+  background-image: url(../../../jpg/h2_4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.width {
+  width: 530px;
+}
+.bg-black {
+  background: rgba(25, 45, 58, 0.685);
+}
+
+.bg-white {
+  color: #333;
+  background-color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+/* .body2{
+    padding:100px 40px;
+    text-align: justify;
+    margin: 50px;
+    position: fixed;
+    border:groove;}
+    */
+.body2 {
+  color: #fff;
+  background: rgba(42, 55, 68, 0.397);
+  padding: 60px 32px;
+  border: groove;
+  margin: 50px;
+}
+.footen {
+  text-align: center;
+  line-height: 33px;
+  letter-spacing: 20px;
+  border: none;
+}
+.footen button {
+  text-decoration: none;
+  font-size: 25px;
+}
+.shadow {
+  text-shadow: 7px 5px #333;
+  text-transform: capitalize;
+}
+button:hover {
+  color: rgb(255, 102, 0);
+}

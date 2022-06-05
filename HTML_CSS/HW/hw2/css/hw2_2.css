@@ -1,0 +1,36 @@
+body {
+  background: url(../../../jpg/h2_6.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.width {
+  width: 530px;
+}
+.body2 {
+  color: #fff;
+  background: rgba(42, 55, 68, 0.397);
+  padding: 140px 32px;
+  border: groove;
+  margin:50px
+}
+.footen{
+    text-align: center;
+    line-height: 33px;
+    letter-spacing: 20px;
+    border: none;
+}
+.footen button {
+    text-decoration: none;
+    font-size: 25px;
+    
+}
+
+.shadow{
+  text-shadow:7px 5px #333;
+  text-transform:capitalize;
+
+}
+button:hover{
+color: rgb(223, 64, 24);
+}

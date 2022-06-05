@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Câu hỏi phỏng vấn Java p2</title>
+  </head>
+  <body>
+    <!--  -->
+    <div>
+      <ul style="line-height: 30px; background: darkgray; width: 160px">
+        <li>
+          <a href="h1_1.html" style="text-decoration: none; color: black">
+            Câu hỏi 1 &rarr; 5
+          </a>
+        </li>
+        <li>
+          <a href="h1_2.html" style="text-decoration: none; color: black">
+            Câu hỏi 6 &rarr; 10
+          </a>
+        </li>
+        <li>
+          <a href="h1_3.html" style="text-decoration: none; color: black">
+            Câu hỏi 11 &rarr; 17
+          </a>
+        </li>
+      </ul>
+
+      <hr />
+    </div>
+    <!--  -->
+    <div style="margin: 0 15%">
+      <div style="width: 1000px">
+        <h1 style="font-size: 60px">17 Câu hỏi phỏng vấn Java (Phần 2)</h1>
+        <h3>6. Các kiểu kế thừa trong Java</h3>
+        Java hỗ trợ 4 kiểu kế thừa:
+        <ul>
+          <li>
+            Đơn kế thừa: Một lớp kế thừa các thuộc tính, phương thức cảu lớp
+            khác, tức là sẽ chỉ có một lớp cha và một lớp con
+          </li>
+          <li>
+            Kế thừa thứ bậc: Khi có nhiều hơn một lớp con hay nói cách khác,
+            nhiều lớp con cùng kế thừa một lớp cha
+          </li>
+          <li>
+            Kế thừa đa cấp: Lớp con kế thừa các tính năng của lớp cha và dồng
+            thời lớp con này lại hoạt động như một lớp cha cho lớp con khác.
+          </li>
+          <li>Kế thừa lai: Sự kết hợp của hai hay nhiều kiểu kế thừa.</li>
+          <li>
+            Đa kế thừa: Khi có một lớp con được kế thừa từ hai hay nhiều lớp
+            cha.
+          </li>
+        </ul>
+        Tuy nhiên, trong Java không hỗ trợ kế thừa lai và đa kế thừa mà chúng
+        chỉ có thể được thực hiện thông qua interface
+        <h3>7. Nạp chồng phương thức và ghi đè phương thức là gì?</h3>
+        <ul>
+          <li>
+            Nạp chồng phương thức: Các phương thức có cùng tên, cùng nằm trong
+            một class nhưng khác nhau về tham số (Số lượng tham số và kiểu dữ
+            liệu của tham số) thì được gọi là nạp chồng phương thức
+          </li>
+          <li>
+            Ghi đè phương thức: Nếu lớp con có cùng phương thức được khai báo
+            trong lớp cha, nó được gọi là ghi đè phương thức.
+          </li>
+        </ul>
+
+        <h3>8. Nạp chồng phương thức và ghi đè phương thức là gì?</h3>
+
+        Nạp chồng phương thức: Các phương thức có cùng tên, cùng nằm trong một
+        class nhưng khác nhau về tham số (Số lượng tham số và kiểu dữ liệu của
+        tham số) thì được gọi là nạp chồng phương thức Ghi đè phương thức: Nếu
+        lớp con có cùng phương thức được khai báo trong lớp cha, nó được gọi là
+        ghi đè phương thức.
+        <br />
+        <img src="../../jpg/hw1_3.jpg" alt="Ví dụ" />
+        <br />
+        <h3>
+          9. Có thể ghi đè phương thức private hoặc static trong Java không?
+        </h3>
+        Không thể ghi đè phương thức private hoặc static trong Java. Nếu tạo một
+        phương thức có cùng kiểu trả về, cùng tham số trong lớp con thì nó sẽ ẩn
+        phương thức của lớp cha. Tương tự, cũng không thể ghi đè một phương thức
+        private trong lớp con vì ta không thể truy cập được phương thức đó tại
+        lớp con, những gì có thể làm chỉ là tạo ra một phương thức khác có cùng
+        tên với phương thức của lớp cha trong lớp con.
+        <h3>10. Đa kế thừa là gì?</h3>
+        Tại sao nó không được hỗ trợ trong Java? Nếu có một lớp con kế thừa các
+        thuộc tính từ hai hay nhiêu lớp cha thì nó được gọi là đa kế thừa. Tuy
+        nhiên, Java không hỗ trợ đa kế thừa. Vẫn đề với đa kế thừa là nếu nhiều
+        lớp cha có cùng tên phương thức, thì trong lúc runtime, trình biên dịch
+        sẽ khó quyết định phương thức nào sẽ được thực thi từ lớp con. Do đó,
+        java không hỗ trợ đa kế thừa. Bài toán này được gọi là bài toán kim
+        cương (Diamond Problem).
+      </div>
+    </div>
+    <!--  -->
+    <div>
+      <hr />
+      <h3>Bình Luận</h3>
+      <input type="text" />
+      <button>Gửi</button>
+    </div>
+  </body>
+</html>
