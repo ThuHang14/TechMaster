@@ -64,8 +64,7 @@ public class TodoService {
 //		if(todoOptional.isEmpty()){
 //		  throw new NotFoundException("khong tim thay cong viec co id = " + id );
 //
-//		}
-		Todo todo = getById(id);
+   		Todo todo = getById(id);
 		todo.setTitle(request.getTitle());
 		todo.setStatus(request.isStatus());
 
