@@ -37,7 +37,7 @@ import java.util.List;
 @NamedNativeQuery(
         name = "getAllBlogInfo",
         resultSetMapping = "userInfo",
-        query = "select  b.id, b.title, b.slug ,b.description,b.thumbnail,\n" +
+        query = "select  b.id, b.title, b.slug ,b.description,b.content,b.thumbnail,\n" +
                 "date_format (b.published_at, '%d/%m/%y') as published_at,\n" +
                 "json_object(\"id\" , u.id,\"name\",u.name) as author,\n" +
                 "count(c.id) as count_comment\n" +
@@ -115,12 +115,25 @@ public class Blog {
 
     @PrePersist
     public void prePersist() {
-        createdAt = LocalDateTime.now().minusMonths(2);
-        updatedAt = createdAt;
+        createdAt = LocalDateTime.now();
+
         if (status == 1) {
             publishedAt = updatedAt;
         }
     }
 
 
+    @PreUpdate
+    public void preUpdate() {
+        createdAt = LocalDateTime.now();
+
+        if (status == 1) {
+            publishedAt = updatedAt;
+        }
+    }
+
+    @PreRemove
+    public void preRemove() {
+        this.categories = null;
+    }
 }

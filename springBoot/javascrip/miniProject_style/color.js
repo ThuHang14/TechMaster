@@ -1,7 +1,7 @@
 $(".btn-random-color-name").click(function() {
     $.ajax({
         type: "GET",
-        url: "http://localhost:8081/random-color?type=1",
+        url: "http://localhost:8080/random-color?type=1",
         success: function(response) {
             console.log(response);
         },

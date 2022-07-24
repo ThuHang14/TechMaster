@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Employers</h1>
+<table class="table ">
+    <thead>
+    <tr>
+        <th scope="col">id</th>
+        <th scope="col">Tên</th>
+        <th scope="col">Logo</th>
+        <th scope="col">Website</th>
+        <th scope="col">Email</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+        <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="employer, iStat:${employers}">
+        <td th:text="${iStat.index} +1"></td>
+        <td th:text="${employer.name}"></td>
+        <td>
+            <img
+                    th:src="@{${'~/' + employer.logo_path}}"
+                    alt=""
+                    class="logo-small"
+                    style="height: 40px;"/>
+        </td>
+        <td>
+            <a
+                    th:href="${employer.website}"
+                    th:text="${employer.website}"
+            ></a>
+        </td>
+        <td>
+            <a th:text="${employer.email}"
+               th:href="${employer.website}"></a>
+        </td>
+        <td>
+            <form th:action="@{${'update/' + employer.id}}" method="PUT">
+                <input class="btn btn-primary"
+                       type="submit"
+                       value="Update"
+                />
+            </form>
+        </td>
+        <td>
+
+            <form th:action="@{${'delete/' + employer.id}}" method="GET">
+                <input class="btn btn-danger"
+                       type="submit"
+                       value="Delete"
+                />
+            </form>
+        </td>
+        <td>
+            <!--                <button  class="btn btn-primary" onclick="window.location.href='/sendmail'"> Apply</button>-->
+            <form th:action="@{${'sendmail/' + employer.id}}" method="GET">
+                <input class="btn btn-primary"
+                       type="submit"
+                       value="Send Mail"
+                />
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<div>
+    <button class="btn btn-primary" onclick="window.location.href='/employer/add'"> Create New Employers</button>
+</div>
+</body>
+</html>

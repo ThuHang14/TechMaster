@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<header th:insert="template.html :: topmenu"> </header>
+<body>
+    <h1>Home Page</h1>
+    <div th:text="${testTh}">th text</div>
+    <div th:utext="${testHTML}"></div>
+    <div th:text="${'Book : '+book.title + '_' + book.author}"></div>
+    <div th:text="${book.title} + ' : ' + ${book.author}"></div>
+    <div th:text="|${book.title}  :  ${book.author}|"></div>
+
+    <div class="list">
+        <h1>Demo link </h1>
+        <ul>
+            <li><a href="/text">link text</a></li>
+            <li><a th:href="@{/text}">Abosolute Link</a></li>
+            <li><a th:href="@{/link}">demo '/link' </a></li>
+            <li><a th:href="@{/about}">demo '/about' </a></li>
+        </ul>
+    </div>
+    <header th:replace="template.html :: footer"> </header>
+</body>
+
+</html>

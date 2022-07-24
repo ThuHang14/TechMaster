@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="3c004b9a-6067-411d-ae7f-5fc944825c4e" name="hellojpa/Hibernate Mapping">
+      <data-sources db="a7dfa67d-4022-4833-b4e7-3cb5d22370ca" />
+    </mapping>
+  </component>
+</project>

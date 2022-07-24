@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+
+</style>
+<body>
+<div th:fragment="topmenu" style="display: flex;text-decoration: overline;">
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/text">text</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/link">link</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="/about">About</a>
+        </li>
+    </ul>
+</div>
+<div th:fragment="footer">
+    <h1>Footer</h1>
+</div>
+</body>
+</html>

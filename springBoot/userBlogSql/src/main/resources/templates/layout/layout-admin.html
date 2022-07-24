@@ -31,7 +31,7 @@
 <div class="wrapper">
 
     <!--    HEADER-->
-    <th:block th:replace="~{/fragments/header-admin :: header-admin}"></th:block>
+    <th:block th:replace="~{/fragments/header-admin :: header}"></th:block>
 
     <!--    CONTENT-->
     <th:block th:replace="${content} ?: ~{}"></th:block>
@@ -49,7 +49,8 @@
 
 <!-- AdminLTE App -->
 <script th:src="@{/admin-lte/dist/js/adminlte.js}"></script>
-
+<!--axios-->
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <!--Js-->
 <th:block th:replace="${js} ?: ~{}"></th:block>
 </body>

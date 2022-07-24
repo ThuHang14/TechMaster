@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<th:block th:fragment="taskMenu">
+    <div class="col-md-3" >
+        <h2 class="fs-5 mb-4">Chủ đề</h2>
+        <div class="topic-item input-group d-flex align-items-center mb-1" th:each="topic : ${topics}">
+            <input type="radio" th:value="${topic.id}" th:id="${topic.id}" name="topic">
+            <label  class="ms-2 fs-5" th:text="${topic.name}">Lập trình Backend</label>
+        </div>
+    </div>
+</th:block>
+
+</body>
+</html>

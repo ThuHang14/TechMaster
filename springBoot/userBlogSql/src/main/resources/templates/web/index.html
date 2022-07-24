@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org"
-      th:replace="~{/layout/layout :: main-fragment(~{::title},~{},~{:: #main},~{})}">
+      th:replace="~{/layout/layout :: main-fragment(~{:: title}, ~{}, ~{:: #main}, ~{})}">
 
 <head>
-    <title>trang chu</title>
-
+    <title>Trang chủ</title>
 </head>
 
 <body>
-
-    <!-- Page Content -->
-    <!-- Banner Starts Here -->
-    <th:block id="main">
+<!-- Page Content -->
+<!-- Banner Starts Here -->
+<th:block id="main">
     <div class="heading-page header-text">
         <section class="page-heading">
             <div class="container">
@@ -36,30 +34,22 @@
                             <div class="col-lg-6" th:each="blog : ${blogs}">
                                 <div class="blog-post">
                                     <div class="blog-thumb">
-                                        <img th:src="${blog.thumbnail}" alt="" />
+                                        <img th:src="${blog.thumbnail}" th:alt="${blog.title}" />
                                     </div>
                                     <div class="down-content">
-                                        <a th:href="@{/blogs/{id}/{slug} (id = ${blog.id},slug = ${blog.slug}) }">
-                                            <h4 th:text="${blog.title}">Donec tincidunt leo</h4>
+                                        <a th:href="@{/blogs/{id}/{slug} (id = ${blog.id}, slug = ${blog.slug})}">
+                                            <h4 th:text="${#strings.substring(blog.title,0,20) + ' ...'}">Donec tincidunt leo</h4>
                                         </a>
                                         <ul class="post-info">
+                                            <li><a href="#" th:text="${blog.authorInfo.name}">Admin</a></li>
                                             <li>
-                                                <a href="#"
-                                            th:text="${blog.authorInfo.name}"
-                                            >Admin</a>
+                                                <a href="#" th:text="${blog.pulishedAt}">31/05/2020</a>
                                             </li>
                                             <li>
-                                                <a href="#"
-                                                th:text="${blog.publishedAt}"
-                                                >31/05/2020</a>
-                                            </li>
-                                            <li>
-                                                <a href="#"
-                                                th:text="|${blog.countComment} Comments|"
-                                                >12 Comments</a>
+                                                <a href="#" th:text="|${blog.countComment} Comments|">12 Comments</a>
                                             </li>
                                         </ul>
-                                        <p th:text="${blog.description}">
+                                        <p th:text="${#strings.substring(blog.description,0,100) + ' ...'}">
                                             Nullam nibh mi, tincidunt sed
                                             sapien ut, rutrum hendrerit
                                             velit. Integer auctor a mauris
@@ -91,7 +81,7 @@
                                 <div class="sidebar-item search">
                                     <form id="search_form" name="gs" method="GET" action="#">
                                         <input type="text" name="q" class="searchText" placeholder="type to search..."
-                                            autocomplete="on" />
+                                               autocomplete="on" />
                                     </form>
                                 </div>
                             </div>
@@ -102,20 +92,17 @@
                                     </div>
                                     <div class="content">
                                         <ul>
-                                            <li th:each="blogPopular : ${blogsPopular}">
-                                                <a th:href="@{/blogs/{id}/{slug} (id = ${blogPopular.id},slug = ${blogPopular.slug}) }">
-                                                    <h5 th:text="${blogPopular.title}">
+                                            <li>
+                                                <a href="detail.html">
+                                                    <h5>
                                                         Vestibulum id turpis
                                                         porttitor sapien
                                                         facilisis
                                                         scelerisque
                                                     </h5>
-                                                    <span
-                                                    th:text="${blogPopular.publishedAt}"
-                                                    >31/05/2020</span>
+                                                    <span>31/05/2020</span>
                                                 </a>
                                             </li>
-
                                         </ul>
                                     </div>
                                 </div>
@@ -126,11 +113,9 @@
                                         <h2>Categories</h2>
                                     </div>
                                     <div class="content">
-                                        <ul th:each="category :  ${categories}">
+                                        <ul>
                                             <li>
-                                                <a href="#"
-                                                th:text="${category.name}"
-                                                >- Nature Lifestyle</a>
+                                                <a href="#">- Nature Lifestyle</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -142,9 +127,7 @@
             </div>
         </div>
     </section>
-    </th:block>
-
-
+</th:block>
 </body>
 
 </html>

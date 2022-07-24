@@ -1,11 +1,16 @@
 package com.example.demo.exception;
 
 import lombok.AllArgsConstructor;
-import org.apache.logging.log4j.message.Message;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.http.HttpStatus;
 
 @AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class ErrorMessage {
-    private HttpStatus httpStatus;
-    private String message;
+  private HttpStatus httpStatus;
+  private String message;
 }

@@ -1,5 +1,6 @@
 package com.example.demo.service;
 
+import com.example.demo.exception.BadRequestException;
 import org.springframework.stereotype.Service;
 
 import java.util.Random;
@@ -12,7 +13,7 @@ public class ColorService {
             case 1 -> randomColorName();
             case 2 -> randomHexColor();
             case 3 -> randomRgbColor();
-            default -> randomColorName();
+            default -> throw new BadRequestException("type = " + type +" k hop le");
         };
     }
 
